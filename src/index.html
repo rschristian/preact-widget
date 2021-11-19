@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Preact Widget</title>
+        <meta name="description" content="Preact Widget" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="icon" href="data:" />
+        <link rel="modulepreload" as="script" href="/widget-mount.js" />
+        <style>
+            .preview {
+                width: 100%;
+                max-width: 1100px;
+                margin: 80px auto;
+                border: 1px dashed rgba(0, 0, 0, 0.2);
+                position: relative;
+            }
+
+            .preview::before {
+                content: 'WIDGET PREVIEW';
+                position: absolute;
+                display: block;
+                top: -18px;
+                font-size: 11px;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div data-widget-host="habitat" class="preview">
+            <script type="text/props">
+                { "color": "red"}
+            </script>
+        </div>
+        <script type="module" src="/widget-mount.js"></script>
+    </body>
+</html>

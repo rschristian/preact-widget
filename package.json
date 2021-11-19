@@ -1,0 +1,29 @@
+{
+  "name": "preact-widget",
+  "version": "0.0.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "Preact Widget Template",
+  "repository": "https://github.com/rschristian/preact-widget",
+  "files": [
+    "dist",
+    "!dist/index.html"
+  ],
+  "scripts": {
+    "start": "wmr -p 3000",
+    "build": "microbundle -i src/widget-mount.js --external none --jsxImportSource preact -f modern",
+    "postbuild": "node scripts/post-build-widget.js",
+    "serve": "wmr serve -p 3000"
+  },
+  "devDependencies": {
+    "microbundle": "^0.14.2",
+    "preact": "^10.5.15",
+    "preact-habitat": "^3.3.0",
+    "preact-iso": "^2.3.0",
+    "preact-render-to-string": "^5.1.19",
+    "prettier": "latest",
+    "prettier-config-rschristian": "latest",
+    "wmr": "^3.7.2"
+  },
+  "prettier": "prettier-config-rschristian"
+}
