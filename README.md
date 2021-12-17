@@ -24,7 +24,7 @@ We use a few different projects and libraries here to set up a dev environment f
 
 <br />
 
-`src/widget-mount.js` defines how your component will mount to the page. You can of course change this to whatever you'd like, and see [preat-habitat's API docs](https://github.com/zouhir/preact-habitat#api-docs) to learn more about your options.
+`src/widget-mount.js` defines how your component will mount to the page. You can of course change this to whatever you'd like, and see [preact-habitat's API docs](https://github.com/zouhir/preact-habitat#api-docs) to learn more about your options.
 
 In `src/index.html` you'll see how to pass props to your component. The default setup has a color being passed that ends up in the style attribute of the widget, changing the text color.
 
@@ -36,7 +36,7 @@ On build, the `src/index.html` files is copied over to `dist/` with a few minor 
 
 - This template is set to only have Microbundle output its modern (ES2017) format. This may not be what you want to do, see [Microbundle#Output-Formats](https://github.com/developit/microbundle#-output-formats-) for more information on the subject
 
-Give it a star if this was helpful, let me know if you have any questions/issues
+Give it a star if this was helpful, let me know if you have any questions or issues
 
 ## License
 
